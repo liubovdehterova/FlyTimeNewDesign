@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <title>Fly Time</title>
+</head>
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <div class="background__form">
+                <h2 class="background__form__title">
+                    Что вас интересует?
+                </h2>
+                <form action="#" class="background__form__main">
+                    <div class="background__form__main__option">
+                        <div class="select">
+                            <select name="option" id="user__info__option" class="background__form__main__select">
+                                <option class="background__form__main__select__inner">
+                                    Другое
+                                </option>
+                                <option value="Разработка" class="background__form__main__select__inner">
+                                    Разработка сайта
+                                </option>
+                                <option value="Продвижение" class="background__form__main__select__inner">
+                                    Продвижение сайта
+                                </option>
+                                <option value="мобильное приложение" class="background__form__main__select__inner">
+                                    Разработка мобильного приложения
+                                </option>
+                            </select>
+                            <input name="name" type="text" class="background__form__main__inp" placeholder="Ваше имя *" required>
+                            <input name="phone" type="phone" class="background__form__main__inp" placeholder="Номер телефона *" required>
+                            <input name="Email" type="email" class="background__form__main__inp" placeholder="Email">
+                            <label for="callback-file"
+                                   class="background__form__main__inp background__form__main__inp__label"
+                                   data-text="{&quot;default&quot;: &quot;+ Прикрепить файл (doc, pdf, jpg) &quot;, &quot;changed&quot;: &quot;Выбранный файл: %s (%s kb)&quot;}">
+                                + Прикрепить файл (doc, pdf, jpg)
+                            </label>
+                            <input type="file"
+                                   name="file"
+                                   data-name="file"
+                                   id="callback-file"
+                                   class="background__form__main__inp background__form__main__inp__file"
+                                   accept=".docx,.doc,.pdf,.jpg"
+                                   data-rule-filetype="docx|doc|pdf|jpg"
+                                   data-msg-filetype="Допустимые расширения файлов: doc, pdf, jpg">
+                        </div>
+                        <div class="select">
+                            <textarea name="text" class="background__form__main__text" placeholder="Напишите все, что считаете нужным" required></textarea>
+                        </div>
+                    </div>
+                    <p class="background__form__main__warning">
+                       <span class="color">*</span> Обязательная информация
+                    </p>
+                    <div class="button">
+                        <input type="submit" class="submit" value="Отправить сообщение">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

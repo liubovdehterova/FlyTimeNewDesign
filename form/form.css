@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 850px;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.background {
+    background-color: rgba(9, 8, 7, 0.9) ;
+    height: 100%;
+}
+
+.background__form:before {
+    content: "";
+    display: block;
+    width: 137px;
+    height: 200px;
+    background: url("../img/imgHead/Персонаж.png");
+    position: absolute;
+    top: -32%;
+    left: 40%;
+}
+
+.background__form {
+    max-width: 705px;
+    border-radius: 26px;
+    border: 1px solid rgba(51, 204, 255, 0.85);
+    background-color: #ccffff;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.93) 0%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 28px 65px;
+    position: relative;
+    top: 25%;
+}
+.background__form__main__option {
+    display: flex;
+    justify-content: space-between;
+}
+.select {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+}
+.background__form__main__select {
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(51, 204, 255, 0.85);
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+.background__form__main__inp {
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(51, 204, 255, 0.85);
+    background-color: #ffffff;
+    color: #b9b3b3;
+    margin-bottom: 15px;
+}
+.background__form__main__inp__label {
+    margin-bottom: 0;
+}
+
+.background__form__main__inp__file {
+    visibility: hidden;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+.background__form__main__text {
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(51, 204, 255, 0.85);
+    background-color: #ffffff;
+}
+.background__form__title {
+    color: #201e1e;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.submit {
+    padding: 33px 78px;
+    border: none;
+    box-shadow: 0 1px 7px 1px rgba(31, 30, 28, 0.54);
+    border-radius: 10px;
+    background-image: linear-gradient(-220deg, rgba(247, 203, 107, 0.93) 0%, rgba(251, 169, 128, 0.93) 100%), linear-gradient(-198deg, #ff934c 0%, #fc686f 100%);
+    color: #242323;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.color {
+    color: red;
+}

@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Fly Time</title>
+</head>
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <div class="background__form">
+                <h2 class="background__form__title">
+                    Что вас интересует?
+                </h2>
+                <button class="button__esc">
+                    <img src="./img/imgHead/Слой_1.png" alt="close">
+                </button>
+                <form action="#" class="background__form__main">
+                    <div class="background__form__main__option">
+                        <div class="select">
+                            <select name="option" id="user__info__option" class="background__form__main__select">
+                                <option class="background__form__main__select__inner">
+                                    Другое
+                                </option>
+                                <option value="Разработка" class="background__form__main__select__inner">
+                                    Разработка сайта
+                                </option>
+                                <option value="Продвижение" class="background__form__main__select__inner">
+                                    Продвижение сайта
+                                </option>
+                                <option value="мобильное приложение" class="background__form__main__select__inner">
+                                    Разработка мобильного приложения
+                                </option>
+                            </select>
+                            <input name="name" type="text" class="background__form__main__inp" placeholder="Ваше имя *" required>
+                            <input name="phone" type="phone" class="background__form__main__inp" placeholder="Номер телефона *" required>
+                            <input name="Email" type="email" class="background__form__main__inp" placeholder="Email">
+                            <label for="callback-file"
+                                   class="background__form__main__inp background__form__main__inp__label"
+                                   data-text="{&quot;default&quot;: &quot;+ Прикрепить файл (doc, pdf, jpg) &quot;, &quot;changed&quot;: &quot;Выбранный файл: %s (%s kb)&quot;}">
+                                + Прикрепить файл (doc, pdf, jpg)
+                            </label>
+                            <input type="file"
+                                   name="file"
+                                   data-name="file"
+                                   id="callback-file"
+                                   class="background__form__main__inp background__form__main__inp__file"
+                                   accept=".docx,.doc,.pdf,.jpg"
+                                   data-rule-filetype="docx|doc|pdf|jpg"
+                                   data-msg-filetype="Допустимые расширения файлов: doc, pdf, jpg">
+                        </div>
+                        <div class="select">
+                            <textarea name="text" class="background__form__main__text" placeholder="Напишите все, что считаете нужным" required></textarea>
+                        </div>
+                    </div>
+                    <p class="background__form__main__warning">
+                        <span class="color">*</span> Обязательная информация
+                    </p>
+                    <div class="button">
+                        <input type="submit" class="submit" value="Отправить сообщение">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__flx">
+                <a href="#" class="header__flx__logo"></a>
+                <nav class="header__flx__l">
+                    <ul class="header__flx__list">
+                        <li class="header__flx__list__inner">
+                            <a href="#" class="header__flx__list__inner__link">
+                                Услуги
+                            </a>
+                            <ul class="header__flx__list__inner__submenu">
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Разработка сайтов
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        SEO-продвижение сайта
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Веб дизайн
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Техническая поддержка
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Доработка сайта
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Редизайн сайта
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Контекстная реклама
+                                    </a>
+                                </li>
+                                <li class="header__flx__list__inner__submenu__inner">
+                                    <a href="#" class="header__flx__list__inner__submenu__inner__link">
+                                        Настройка аналитики
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__flx__list__inner">
+                            <a href="#" class="header__flx__list__inner__link">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header__flx__list__inner">
+                            <a href="#" class="header__flx__list__inner__link">
+                                О нас
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__flx__button">
+                    Связаться с нами
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="block__head">
+        <div class="container">
+            <div class="block__head__phone">
+                <a href="tel:+998996314682" class="block__head__phone__link">
+                    +9 989 96 314 682
+                </a>
+            </div>
+            <h1 class="block__head__title deconstructed">
+                Диджитализируем Бизнес
+                <div>Диджитализируем Бизнес</div>
+                <div>Диджитализируем Бизнес</div>
+                <div>Диджитализируем Бизнес</div>
+                <div>Диджитализируем Бизнес</div>
+            </h1>
+            <h2 class="block__head__subtitle">
+                Разрабатываем. Интегрируем. Сопровождаем
+                <div>Разрабатываем. Интегрируем. Сопровождаем</div>
+                <div>Разрабатываем. Интегрируем. Сопровождаем</div>
+                <div>Разрабатываем. Интегрируем. Сопровождаем</div>
+                <div>Разрабатываем. Интегрируем. Сопровождаем</div>
+            </h2>
+            <div class="block__head__call">
+                <p class="block__head__call__ask">Необходим IT-продукт?</p>
+                <a href="#" class="block__head__call__link">Давайте обсудим!</a>
+            </div>
+            <div class="block__head__scroll">
+                <a href="#" class="block__head__scroll__link">
+                    <img src="./img/icon/2-layers.png" alt="scroll">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__title">
+        <div class="container">
+            <h2 class="main__title__inner">
+                Комплексные решения
+            </h2>
+        </div>
+    </div>
+
+    <main class="main__block">
+        <div class="main">
+            <div class="container">
+                <ul class="main__list main__list__aftr">
+                    <li class="main__list__inner one">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Интернет Магазин
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Делаем работу интернет-магазина простой и быстрой благодаря специальным инструментам.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner two">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Корпоративные сайты
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Разрабатываем корпоративные проекты различной сложности и масштаба.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner three">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Доработка сайта
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Внедряем новые 'хотелки', развиваем функционал, оптимизируем работу модулей и плагинов.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner four">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Бизнес сайт
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Помогаем создать правильное позиционирование для расширения партнерской и клиентской сети.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner five">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Сайт-визитка
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Уделяем особое внимание созданию эмоции и яркому впечатлению о вашем бренде.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner six">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                SEO
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Оптимизируем сайт под требования поисковых систем и увеличиваем объемы бесплатного органического трафика.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main__block-next">
+            <div class="container">
+                <ul class="main__list main__list__show">
+                    <li class="main__list__inner main__list__inner-othr">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Чат бот для телеграмм
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Мессенджер Telegram не перестает набирать популярность.
+                                Пользователи полюбили его за полную безопасность и анонимность в общении, удобство, а также возможность создать чат бот в телеграмм.
+                                Это небольшие программы-роботы, которые призваны облегчить нам жизнь.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner main__list__inner-othr">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Администрирование 1С
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Под администрированием в 1С подразумевается выполнение комплекса мероприятий,
+                                позволяющее программе функционировать с необходимым уровнем качества и пользователям выполнять предусмотренные системой функции.
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                    <li class="main__list__inner main__list__inner-othr">
+                        <a href="#" class="main__list__inner-item">
+                            <h3 class="main__list__inner__title">
+                                Аутсорсинг ИТ-инфраструктуры
+                            </h3>
+                            <p class="main__list__inner__description">
+                                Компания «Fly Time» успешно предоставляет своим клиентам качественные ИТ-услуги (Аутсорсинг ИТ-инфраструктуры) на протяжении многих лет (it обслуживание офисов).
+                            </p>
+                            <p class="main__list__inner__link">
+                                Подробнее
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="main__block__call">
+                    <h3 class="main__block__call__subtitle">
+                        Сомневаетесь?
+                    </h3>
+                    <h2 class="main__block__call__title">
+                        Давайте обсудим!
+                    </h2>
+                    <p class="main__block__call__description">
+                        Оставьте заявку: наши эксперты разберут вашу текущую ситуацию и помогут подобрать эффективное решение для масштабирования бизнеса.
+                    </p>
+                    <button class="main__block__call__ask header__flx__button">
+                        Обсудить проект
+                    </button>
+                </div>
+                <div class="block__head__scroll main__block__scroll">
+                    <a href="#" class="block__head__scroll__link">
+                        <img src="./img/icon/2-layers.png" alt="scroll">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__link">
+                <ul class="footer__link__inner footer__link__inner-hidden">
+                    <p class="footer__link__title">
+                        <a href="#" class="footer__link__title__inner">О нас</a>
+                    </p>
+                    <li class="footer__link__inner__list">
+                        <a href="#" class="footer__link__inner__list-item">Отзывы клиентов</a>
+                    </li>
+                    <li class="footer__link__inner__list">
+                        <a href="#" class="footer__link__inner__list-item">Команда</a>
+                    </li>
+                    <li class="footer__link__inner__list">
+                        <a href="#" class="footer__link__inner__list-item">Офис</a>
+                    </li>
+                </ul>
+                <div class="footer__link__inner">
+                    <p class="footer__link__title">
+                        <a href="#" class="footer__link__title__inner">Услуги</a>
+                    </p>
+                    <div class="list">
+                        <ul class="footer__link__inner">
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Разработка сайтов</a>
+                            </li>
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Доработка сайта</a>
+                            </li>
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Веб Дизайн</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__link__inner">
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Редизайн сайта</a>
+                            </li>
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Контекстная реклама</a>
+                            </li>
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">SEO-продвижение</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__link__inner">
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Техническая поддержка</a>
+                            </li>
+                            <li class="footer__link__inner__list">
+                                <a href="#" class="footer__link__inner__list-item">Настройка аналитики</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__call">
+                <button class="header__flx__button footer__flx__button">
+                    Связаться с нами
+                </button>
+            </div>
+            <p class="footer__copy">
+                © 2022 IT-компания Fly Time
+            </p>
+            <div class="footer__logo">
+                <a href="#" class="footer__logo__link">
+                    <img src="./img/logo/Слой_28.png" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
